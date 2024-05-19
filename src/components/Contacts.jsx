@@ -37,7 +37,7 @@ function Contacts() {
               <div className="text-xl font-semibold">
                 <h2>Our Office Location</h2>
               </div>
-              <div>
+              <div className="text-end">
                 <p>
                   The Interior Design Studio Company
                   <br />
