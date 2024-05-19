@@ -1,0 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #333333;
+}
+
+.hero-section {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.3)
+    ),
+    url("https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/addc05149516556bbd091e47/3730262_73938.jpg");
+}
+.question {
+  background-image: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.65),
+      rgba(0, 0, 0, 0.65)
+    ),
+    url("https://images01.nicepage.com/a1389d7bc73adea1e1c1fb7e/bfc627b12c155df6ac3a106c/people-using-smartphones.jpg");
+}
+.read-more-button button:hover,
+.free-call-now-button button:hover {
+  background-color: #e6e6e6;
+}
+.hero-section,
+.question {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+ul li {
+  list-style-type: square;
+  list-style: square;
+}
+.upload-free-button button:hover {
+  background-color: #28b86b;
+}
+.carousel-next-button,
+.carousel-prev-button {
+  transform: translateY(-50%);
+}
+.carousel-markers {
+  transform: translateX(-50%);
+  bottom: 0;
+}
