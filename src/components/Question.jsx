@@ -19,7 +19,7 @@ function Question() {
           <p>Lorem ipsum dolor sit amet.</p>
         </div>
         <div className="free-call-now-button">
-          <button className="w-1/4 max-lg:w-full h-16 bg-white uppercase text-sec font-semibold text-xl">
+          <button className="w-1/4 max-lg:w-full h-16 bg-white uppercase text-sec font-semibold text-lg tracking-wider">
             <p>Free Call Now</p>
           </button>
         </div>

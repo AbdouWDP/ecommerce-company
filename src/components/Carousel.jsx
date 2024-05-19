@@ -6,15 +6,12 @@ import { AiOutlineRight } from "react-icons/ai";
 const CarouselCard = ({ name, job, src }) => {
   return (
     <>
-      <div className="h-full" style={{ width: "32%" }}>
+      <div className="s-c-i h-full max-lg:w-full">
         <img src={src} alt="" className="w-full h-full object-cover" />
       </div>
-      <div
-        className="h-full flex justify-center items-center"
-        style={{ width: "68%" }}
-      >
-        <div className="w-4/5 h-1/2 text-white flex gap-8 flex-col justify-center">
-          <div className="carousel-card-title text-4xl font-bold">
+      <div className="s-c-b h-full flex justify-center items-center max-lg:w-full">
+        <div className="w-4/5 h-1/2 text-white flex gap-8 max-lg:gap-2 flex-col justify-center max-lg:w-full">
+          <div className="carousel-card-title text-4xl font-bold max-lg:text-3xl">
             <h1>
               {name}, <span className="italic font-normal"> {job} </span>
             </h1>
@@ -35,7 +32,7 @@ const CarouselCard = ({ name, job, src }) => {
 const PrevButton = ({ nextCarousel }) => {
   return (
     <>
-      <div className="carousel-prev-button absolute top-1/2 left-0">
+      <div className="carousel-prev-button absolute top-1/2 left-0 max-sm:hidden">
         <button className="w-16 aspect-square rounded-full bg-sec text-white text-5xl flex justify-center items-center">
           <span>
             <AiOutlineLeft />
@@ -48,7 +45,7 @@ const PrevButton = ({ nextCarousel }) => {
 
 const NextButton = ({ nextCarousel }) => {
   return (
-    <div className="carousel-next-button absolute top-1/2 right-0">
+    <div className="carousel-next-button absolute top-1/2 right-0 max-sm:hidden">
       <button className="w-16 aspect-square rounded-full bg-sec text-white text-5xl flex justify-center items-center">
         <span>
           <AiOutlineRight />
@@ -66,8 +63,8 @@ function Carousel() {
     >
       <article className="w-3/4 h-4/5 flex flex-col items-center justify-center relative">
         <PrevButton />
-        <div className="carousel w-4/5 h-4/5 flex overflow-hidden relative">
-          <div className="single-carousel w-full h-full flex shrink-0">
+        <div className="carousel w-4/5 h-4/5 flex overflow-hidden relative max-lg:w-full">
+          <div className="single-carousel w-full h-full flex shrink-0 max-lg:flex-col max-lg:gap-4">
             <CarouselCard
               name="John Jackson"
               job="developer"

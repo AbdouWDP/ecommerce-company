@@ -6,7 +6,7 @@ import { FaInstagram } from "react-icons/fa";
 const TeamCard = ({ src, name, job }) => {
   return (
     <>
-      <div className="team-card bg-main flex justify-center items-center max-lg:w-full">
+      <div className="team-card bg-main flex justify-center items-center max-lg:w-3/4 max-md:w-full">
         <div
           className="flex flex-col gap-4 text-white max-lg:gap-0 max-lg:justify-between"
           style={{ width: "85%", height: "90%" }}
@@ -14,7 +14,7 @@ const TeamCard = ({ src, name, job }) => {
           <div className="team-card-image w-4/5 aspect-square">
             <img src={src} alt="" className="w-full h-full rounded-full" />
           </div>
-          <div className="text-xl font-bold uppercase max-lg:text-2xl">
+          <div className="text-xl font-bold uppercase max-md:text-2xl max-lg:text-3xl">
             <h2> {name} </h2>
           </div>
           <div className="text-lg font-semibold">
