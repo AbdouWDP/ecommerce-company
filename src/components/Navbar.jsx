@@ -48,7 +48,7 @@ function Navbar() {
       {open && (
         <>
           <header
-            className="hidden-nav fixed top-0 left-0 w-1/5 h-screen z-50 ease-linear"
+            className="hidden-nav fixed top-0 left-0 w-1/5 max-xl:w-2/5 h-screen z-50 ease-linear max-lg:w-3/5"
             style={{
               backgroundColor: "rgba(0,0,0, 0.95)",
               opacity: open ? 1 : 0,

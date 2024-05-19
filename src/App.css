@@ -54,3 +54,26 @@ ul li {
   transform: translateX(-50%);
   bottom: 0;
 }
+
+.image {
+  aspect-ratio: 1/0.8;
+  width: 45%;
+}
+.list {
+  width: 48%;
+}
+.team-card {
+  width: 30%;
+  aspect-ratio: 1/1.5;
+}
+
+@media only screen and (max-width: 1124px) {
+  section:not(.question) {
+    height: fit-content !important;
+    padding: 16px 0;
+  }
+  .infos-section,
+  .consulting-firm {
+    padding: 16px 0 0 0 !important;
+  }
+}
